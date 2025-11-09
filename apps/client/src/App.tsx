@@ -18,6 +18,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import InviteSignup from "@/pages/auth/invite-signup.tsx";
 import ForgotPassword from "@/pages/auth/forgot-password.tsx";
 import PasswordReset from "./pages/auth/password-reset";
+import ExcelManagerPage from "@/pages/office365/excel-manager";
 import { useTranslation } from "react-i18next";
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
 
         <Route element={<Layout />}>
           <Route path={"/home"} element={<Home />} />
+          <Route path={"/office365/excel"} element={<ExcelManagerPage />} />
 
           <Route path={"/s/:spaceSlug"} element={<SpaceHome />} />
           <Route
