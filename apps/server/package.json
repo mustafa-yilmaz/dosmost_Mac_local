@@ -49,6 +49,7 @@
     "@react-email/components": "0.0.28",
     "@react-email/render": "^1.0.2",
     "@socket.io/redis-adapter": "^8.3.0",
+    "axios": "^1.7.8",
     "bcrypt": "^5.1.1",
     "bullmq": "^5.29.1",
     "class-transformer": "^0.5.1",

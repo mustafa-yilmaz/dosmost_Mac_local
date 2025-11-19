@@ -14,6 +14,7 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 import { HealthModule } from './integrations/health/health.module';
 import { ExportModule } from './integrations/export/export.module';
 import { ImportModule } from './integrations/import/import.module';
+import { Office365Module } from './integrations/office365/office365.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { ImportModule } from './integrations/import/import.module';
     HealthModule,
     ImportModule,
     ExportModule,
+    Office365Module,
     StorageModule.forRootAsync({
       imports: [EnvironmentModule],
     }),
